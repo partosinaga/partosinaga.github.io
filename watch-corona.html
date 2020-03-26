@@ -70,19 +70,19 @@
 
 				<div class="col-md-4">
 					<div>
-						<div class="amount positif">100</div>
+						<div class="amount positif">101</div>
 						<p class="desc">Positif</p>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div>
-						<div class="amount">100</div>
+						<div class="amount">102</div>
 						<p class="desc">Sembuh</p>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div>
-						<div class="amount">100</div>
+						<div class="amount">103</div>
 						<p class="desc">Meninggal</p>
 					</div>
 				</div>
@@ -113,9 +113,9 @@
 			$.ajax({
 				url: 'https://api.kawalcorona.com/indonesia',
 				type: 'GET',
-				// headers: {
-				// 	'Access-Control-Allow-Origin': '*'
-				// },
+				headers: {
+					'Access-Control-Allow-Origin': '*'
+				},
 				success: function (data) {
 					console.log(data);
 				},
