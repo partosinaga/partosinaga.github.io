@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	
+
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Parto Sinaga</title>
@@ -48,10 +48,11 @@
 </head>
 
 <style>
-	.amount{
+	.amount {
 		font-weight: bold;
 	}
-	.content{
+
+	.content {
 		text-align: center;
 	}
 </style>
@@ -69,7 +70,7 @@
 
 				<div class="col-md-4">
 					<div>
-						<div class="amount positif" >100</div>
+						<div class="amount positif">100</div>
 						<p class="desc">Positif</p>
 					</div>
 				</div>
@@ -108,15 +109,17 @@
 	<script src="js/main.js"></script>
 
 	<script>
-		$('document').ready(function(){
-			$('.positif').html('799');
-			// $.ajax({
-			// 	url: 'https://api.kawalcorona.com/indonesia',
-			// 	method:'POST',
-			// 	success:function(data){
-			// 		console.log(data);
-			// 	}
-			// })
+		$('document').ready(function () {
+			$.ajax({
+				url: 'https://api.kawalcorona.com/indonesia',
+				type: 'GET',
+				// headers: {
+				// 	'Access-Control-Allow-Origin': '*'
+				// },
+				success: function (data) {
+					console.log(data);
+				},
+			})
 		})
 	</script>
 </body>
